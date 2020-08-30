@@ -1,6 +1,6 @@
-import { ModelTest } from '@models/ModelTest';
+import { ModelTest } from '../models/ModelTest';
 
-test('it should be ok', () => {
+test('Name should be Vinicius', () => {
   const test = new ModelTest();
   test.name = 'Vinicius';
   test.test = true;

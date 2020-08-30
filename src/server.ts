@@ -1,9 +1,7 @@
-import express from 'express';
+import app from './app';
+import AppConfig from './config/app.config';
+const port = AppConfig.PORT || 4000;
 
-const app = express();
-
-app.get('/', (req, res) => {
-  res.status(200).send('Tudo ok');
+app.listen(port, () => {
+  console.log(`Express server listening on port ${port}!`);
 });
-
-app.listen(3000);

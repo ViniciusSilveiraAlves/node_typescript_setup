@@ -1,15 +1,15 @@
 {
   "compilerOptions": {
-    "target": "ES2017",                          
+    "target": "ES5",                          
     "module": "commonjs",                     
-    "lib": ["es6"],                             
+    "lib": ["ES5"],                             
     "allowJs": true,                       
     "outDir": "./dist",                        
     "rootDir": "./src",                       
     "removeComments": true,                
     "typeRoots": [
       "./node_modules/@types",
-      ".src/@types"
+      "./src/@types"
     ],                       
     "esModuleInterop": true,                  
     "resolveJsonModule": true,
@@ -17,15 +17,14 @@
     "emitDecoratorMetadata": true,         
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "baseUrl": ".",
-    "paths": {
-      "@config/*":["./src/config/*"],
-      "@controllers/*":["./src/controllers/*"],
-      "@models/*":["./src/models/*"]
-    }
+    "baseUrl": "."
+   
   },
   "include": [
     "src/**/*"
+  ],
+  "exclude": [
+    "src/**/*.spec.ts"
   ]
   
 }
