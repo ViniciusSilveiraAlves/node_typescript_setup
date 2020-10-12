@@ -1,3 +1,10 @@
-node_modules
-dist
-*.env
+.idea/
+node_modules/
+build/
+tmp/
+temp/
+*.env.dev
+*.env.prod
+ormconfig.json
+migration/
+static/

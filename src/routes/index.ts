@@ -1,9 +1,9 @@
-import { ControllerTest } from '../controllers/ControllerTest';
+import { UserController } from '../controllers/UserController';
 
 export class Routes {
   public routes (app: any): void {
-    const controller = new ControllerTest();
+    const userController = new UserController();
     app.route('/')
-      .get(controller.test);
+      .get(userController.signUp);
   }
 }

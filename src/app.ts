@@ -49,6 +49,7 @@ class App {
     const opts: StrategyOptions = {
       jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
       secretOrKey: process.env.JWT_SECRET
+      
     };
 
     const authStrategy = new Strategy(opts, async (payload, done) => {
@@ -59,6 +60,7 @@ class App {
         }
         return done(null, false);
       } catch (error) {
+        
         console.log(error);
       }
     });

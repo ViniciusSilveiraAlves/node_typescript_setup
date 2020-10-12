@@ -1,25 +1,35 @@
 {
     "env": {
         "browser": true,
-        "es2020": true,
-        "jest": true
+        "es2021": true
     },
     "extends": [
-        "standard"
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended"
     ],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
-        "ecmaVersion": 2017
+        "ecmaVersion": 12
     },
     "plugins": [
         "@typescript-eslint"
     ],
     "rules": {
-        "semi": [
-            2,
-            "always"
+        "indent": [
+            "error",
+            "tab"
         ],
-        "no-unused-vars": "off",
-        "@typescript-eslint/no-unused-vars": "error"
+        "linebreak-style": [
+            "error",
+            "windows"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ]
     }
 }
