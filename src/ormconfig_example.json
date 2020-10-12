@@ -1,0 +1,24 @@
+{
+   "type": "db_driver",
+   "host": "your_host",
+   "port": "your_port",
+   "username": "user",
+   "password": "password",
+   "database": "db_name",
+   "synchronize": false,
+   "logging": false,
+   "entities": [
+      "src/entity/**/*.ts"
+   ],
+   "migrations": [
+      "src/migration/**/*.ts"
+   ],
+   "subscribers": [
+      "dist/subscriber/**/*.js"
+   ],
+   "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+   }
+}
