@@ -1,1 +1,1 @@
-Setup for web app using typescript + nodejs + jest + babel
+Setup for web app using typescript + nodejs + jest
