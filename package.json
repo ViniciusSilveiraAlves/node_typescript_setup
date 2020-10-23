@@ -5,8 +5,9 @@
   "main": "server.js",
   "scripts": {
     "build": "tsc",
+    "prod": "set NODE_ENV=prod &&  node ./dist/src/server.js",
     "start": "ts-node src/index.ts",
-    "dev": "set NODE_ENV=dev && ts-node-dev -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules --no-notify src/server.ts",
+    "dev": "set NODE_ENV=dev && ts-node-dev --respawn --transpile-only --ignore-watch node_modules --no-notify src/server.ts",
     "test": "jest",
     "typeorm": "node --require ts-node/register ./node_modules/typeorm/cli.js",
     "makemigration": "node --require ts-node/register ./node_modules/typeorm/cli.js \"migration:generate\" \"-n\"",
